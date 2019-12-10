@@ -1,10 +1,20 @@
 
+后台运行：
+docker-compose up -d
 
+修改nginx配置后，通过  
+docker-compose up -d --force-recreate  重启
 
 
 安装 Docker Compose
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+docker-compose --version
 
 
 安装Docker,Centos7。
